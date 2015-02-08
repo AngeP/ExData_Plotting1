@@ -11,5 +11,5 @@ x2$Datetime <- strptime(paste(plotdata$Date, plotdata$Time) , "%d/%m/%Y %H:%M:%S
  
 ## Create Plot2
 png("plot2.png", width = 480, height = 480)
-plot(x2$DateTimes,as.numeric(as.character(x2$Global_active_power)),type = "l",xlab = "",ylab = "Global Active Power (kilowatts)")
+plot(x2$Datetime,as.numeric(as.character(x2$Global_active_power)),type = "l",xlab = "",ylab = "Global Active Power (kilowatts)")
 dev.off()
